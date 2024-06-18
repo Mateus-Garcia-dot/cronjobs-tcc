@@ -38,7 +38,6 @@ def create_index(index_name):
         es.indices.create(index=index_name, body=index_settings)
 
     
-
 index_name = 'linha'
 create_index(index_name)
 bulk_insert(es, get_lines(), index_name)
